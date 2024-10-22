@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trivia</title>
+        <link rel="stylesheet" href="game.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="player-details">
+                <h2>Players Name</h2>
+                <label>Player1:</label><input type="text" id="name1" placeholder="Enter name of player 1" required>
+                <br>
+                <label>Player2:</label> <input type="text" id="name2" placeholder="Enter name of player 2" required>
+                <br>
+                <button id="start">Start</button>
+            </div>
+            <div id="category" style="display: none;">
+                <h2>Category Selection</h2>
+                <select id="select-category"></select>
+                <br>
+                <button id="select-category-btn">Select Category</button>
+            </div>
+            <div id="questions" style="display: none;">
+                <h2>Question</h2>
+                <p id="question-text" class="bold-text"></p>
+                <h3>Options</h3>
+                <div id="answers"></div>
+                <button id="submit-answer">Submit</button>
+            </div>
+            <div id="score" style="display: none;">
+                <h2>Score Board</h2>
+                <p>Player 1: <span id="player1-score">0</span></p>
+                <p>Player 2: <span id="player2-score">0</span></p>
+            </div>
+            <div id="post-question-options" style="display: none;">
+                <h2>Post-Question Options</h2>
+                <button id="next-category">Select Another Category</button>
+                <button id="end-game">End Game</button>
+            </div>
+            <div id="end" style="display: none;">
+                <h2>Game Over</h2>
+                <p id="message"></p>
+                <button id="play-again">Play Again</button>
+            </div>
+        </div>
+        <script src="game.js"></script>
+    </body>
+</html>
